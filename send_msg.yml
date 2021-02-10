@@ -2,14 +2,8 @@
 - name: Maintenance on TSE
   hosts: all
 
-  vars_prompt:
-    - name: "Message"
-      prompt: "Enter your message"
-      private: no
-      default: "localhost"
-
   vars:
-      Message: Toto
+      Message: Careful you need to updae your system
 
   tasks:
   - name: Ping TSE
