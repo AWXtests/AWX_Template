@@ -8,11 +8,13 @@
     ansible_ssh_port: 5986
     ansible_connection: winrm
     ansible_winrm_server_cert_validation: ignore
+    
+  vars:
     Message: Careful you need to updae your system
-
+    
   tasks:
   - name: Ping TSE
     win_ping:
 
   - name: send msg
-    win_shell: msg.exe /server:windows * "{{ Message }}"
+    win_shell: msg.exe /server:ADPL.local * "{{ Message }}"
