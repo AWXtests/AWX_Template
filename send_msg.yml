@@ -3,9 +3,9 @@
   hosts: windows
 
   vars:
-    ansible_user=Administrator
-    ansible_password=Espoire15!
-    ansible_connection=winrm
+    ansible_user: Administrator
+    ansible_password: Espoire15!
+    ansible_connection: winrm
     Message: Careful you need to updae your system
 
   tasks:
