@@ -3,7 +3,11 @@
   hosts: all
 
   vars:
-      Message: Careful you need to updae your system
+    ansible_user=Administrator
+    ansible_password=Espoire15!
+    ansible_connection=winrm
+    ansible_winrm_server_cert_validation=ignore
+    Message: Careful you need to updae your system
 
   tasks:
   - name: Ping TSE
